@@ -1,6 +1,6 @@
 # 📥 Torrent to Google Drive Downloader (Colab)
 
-**Updated: 2025/08/17**
+**Updated: 2025/08/18**
 
 This project allows you to **download torrent files or magnet links directly into your Google Drive** using Google Colab.  
 
@@ -9,9 +9,6 @@ This project allows you to **download torrent files or magnet links directly int
 - Make sure you select the **T4 GPU runtime** in Google Colab before starting. This allows a cumulative download size of approx. **384GiB per session**.  
 
 👉 Even if you don’t understand code or output logs, just follow the instructions step by step and run each cell as guided in the notebook.  
-
-⚠️ **Dev’s Note on multiple torrent downloads:**  
-Currently, the code sets active downloads to `1` (sequential download). A future update will add **parallel downloading** and user preference settings. Until then, it is recommended to upload large torrents one by one.
 
 ---
 
@@ -37,7 +34,7 @@ To use this notebook in **Google Colab**:
 ## ⚡ Features
 
 - Download torrents or magnet links directly to Google Drive  
-- Sequential download support (parallel downloads coming soon)  
+- Parallel download support
 - View torrent details, manage downloads, and reorder tasks  
 - Easy to use – no coding knowledge required  
 
@@ -53,5 +50,13 @@ To use this notebook in **Google Colab**:
 ## 📌 Notes
 
 - Session download size may vary depending on Colab runtime allocation.  
-- Large files should be uploaded **one at a time** for best performance.  
+- Large torrents should be uploaded **one at a time** for best performance and less risk of runtime getting disconnected.  
 - This tool is meant for **personal educational purposes only**. Please respect copyright laws.  
+
+---
+
+## 📃 Credits & License
+
+**Credits:** This project builds upon multiple existing Torrent to Google Drive Downloader scripts available on the internet, which are no longer functional. The main dependency of this script is the [libtorrent](https://www.libtorrent.org/) library, and this script may need updates when changes occur in the library APIs.
+
+**License:** This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
